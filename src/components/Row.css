@@ -1,0 +1,111 @@
+.row{
+    color:white;
+    margin-left: 20px;
+}
+.row > h2 {
+    font-size: 1.2rem;
+}
+ 
+.row__posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row__poster{
+    max-height: 100px;
+}
+
+.row__posterLarge{
+    max-height: 220px;
+}
+
+.card{
+    position: relative;
+    margin-right: 15px;
+    object-fit: contain;
+}
+
+.card-content {
+    transition: all 1s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card-back{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    top: 0;
+    background-color: rgb(143, 143, 143);
+    height: 100%;
+    width: 100%;
+}
+
+.card-back h4{
+    text-align: center;
+}
+
+.card-back{
+    transform:rotateY(180deg);
+}
+  
+.card:hover .card-front {
+    transform: rotateY(-180deg);
+}
+  
+.card:hover .card-back {
+    transform: rotateY(0);
+}
+
+.btn-view_more{
+    background-color: teal;
+    color: white;
+    font-size: 1.1rem;
+    padding: .3rem .5rem;
+    border: 0;
+    border-radius: .2rem;
+}
+
+@media screen and (min-width: 700px){
+    .row > h2 {
+        font-size: 1.4rem;
+    }
+    .row__poster{
+        max-height: 100px;
+    }
+    .row__posterLarge{
+        max-height: 220px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .row > h2 {
+        font-size: 1.6rem;
+    }
+    .row__poster{
+        max-height: 120px;
+    }
+    .row__posterLarge{
+        max-height: 260px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .row > h2 {
+        font-size: 1.9rem;
+    }
+    .row__poster{
+        max-height: 150px;
+    }
+    .row__posterLarge{
+        max-height: 290px;
+    }
+}

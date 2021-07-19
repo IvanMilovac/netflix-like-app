@@ -1,0 +1,51 @@
+.nav{
+    width: 100vw;
+    position: fixed;
+    top:0;
+    padding: 0 10px;
+    z-index: 15;
+    transition: all 0.5s ease-in;
+}
+
+.nav__black{
+    background-color: #111;
+}
+
+.nav__content{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav__logo{
+    width: 100px;
+    object-fit: contain;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.nav__avatar{
+    z-index: 4;
+    width: 27px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 700px){
+    .nav{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .nav__content{
+        width: 90%;
+    }
+    .nav__logo{
+        width:120px;
+    }
+    .nav__avatar{
+        width: 30px;
+    }
+}

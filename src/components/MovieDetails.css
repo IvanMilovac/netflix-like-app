@@ -1,0 +1,89 @@
+.movieDetails__background{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movieDetails__wrapper{
+    width: 90%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr .5fr 1fr .3fr;
+    grid-template-areas: 
+    "a1"
+    "a2"
+    "a3"
+    "a4";
+}
+
+.movie__image{
+    grid-area: a1;
+}
+.movie__image > img {
+    height: 100%;
+    width: 100%;
+    max-height: 170px;
+    object-fit: contain;
+}
+
+.movie__content > h2{
+    grid-area:a2;
+    text-align: center;
+}
+
+.movie__content > p{
+    padding-top: .5rem;
+    grid-area:a3;
+}
+
+.cta_btn{
+    background-color: none;
+    grid-area: a4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.cta_btn > a, button {
+    min-height: 2rem;
+    border: 1px solid white;
+    padding: .5rem .7rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cta_btn > a:hover, button:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+@media screen and (min-width: 500px){
+    .movieDetails__wrapper{
+        height: 50%;
+        width: 80%;
+    }
+    .movie__image > img {
+        max-height: 300px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .movieDetails__wrapper{
+        width: 90%;
+        height: 20%;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 1fr 1.5fr .5fr;
+        grid-template-areas: 
+        "a1 a2"
+        "a1 a3"
+        "a1 a4";
+    }
+
+}

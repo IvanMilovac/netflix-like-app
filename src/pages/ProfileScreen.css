@@ -1,0 +1,149 @@
+.profileScreen{
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+}
+
+.profileScreen__body{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding-top: 20%;
+}
+
+.profileScreen__body > h1{
+    font-size: 25px;
+    font-weight: 400;
+    border-bottom: 1px solid #282c2d;
+    margin-bottom: 20px;
+}
+
+.profileScreen__info{
+    display: flex;
+
+}
+
+.profileScreen__info >img {
+    height: 40px;
+}
+
+.profileScreen__details{
+    color: white;
+    margin-left: 25px;
+    flex: 1;
+}
+
+.profileScreen__details > h2{
+    background-color: gray;
+    padding: 15px;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.profileScreen__signOut{
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 5%;
+    width: 100%;
+    color: white;
+    background-color: #e50914;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+.profileScreen__plans{
+    margin-top: 10px;
+}
+
+.profileScreen__plans > h3 {
+    border-bottom: 1px solid #282c2d;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.profileScreen__Renew{
+    margin-top: 10px;
+}
+
+.profileScreen__Renew >h4{
+    color: rgb(177, 177, 177);
+    font-size: 1rem;
+}
+
+.profileScreen__plan{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileScreen__plan > h4, p{
+    color: rgb(177, 177, 177);
+}
+
+.profileScreen__plan >h4:hover{
+    color: rgb(255, 255, 255);
+}
+
+.profileScreen__plan > h4{
+    font-size: 1.05rem;
+}
+
+.profileScreen__plan > h4 > p{
+    font-size: .9rem;
+}
+
+.profileScreen__plan > button{
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: rgb(212, 212, 212);
+    background-color: #d30711;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.profileScreen__plan > button:hover{
+    color: rgb(255, 255, 255);
+    background-color: #e50914;
+
+}
+
+.premium > button{
+    background-color: #747474;
+}
+.premium > button:hover{
+    background-color: #a7a7a7;
+}
+
+@media screen and (min-width: 700px){
+    .profileScreen__body{
+        max-width: 600px;
+        justify-content: center;
+        padding-top: 100px;
+    }
+    .profileScreen__body > h1{
+        font-size: 2rem;
+    }
+    .profileScreen__info >img {
+        height: 100px;
+    }
+    .profileScreen__details > h2{
+        font-size: 1.3rem;
+    }
+    .profileScreen__plan > button{
+        padding: 10px 20px;
+    }
+    .profileScreen__plans > h3 {
+        font-size: 1.25rem;
+    }
+    .profileScreen__plan > h4{
+        font-size: 1.25rem;
+    }
+}
